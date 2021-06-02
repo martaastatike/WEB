@@ -1,0 +1,28 @@
+{
+  "name": "mern-skeleton",
+  "version": "1.0.0",
+  "description": "A MERN stack skeleton web application",
+  "main": "index.js",
+  "repository": "https://github.com/martaastatike/martaastatike-WEB215-projects/tree/mern-skeleton.git",
+  "author": "Marta Astatike",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.12"
+  }
+}
