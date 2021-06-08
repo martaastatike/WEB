@@ -1,0 +1,38 @@
+{
+  "name": "mern-skeleton",
+  "version": "1.0.0",
+  "description": "A MERN stack skeleton web application",
+  "main": "index.js",
+  "repository": "https://github.com/martaastatike/WEB215-Projects/tree/MERN-Skeleton/Adding-a-React",
+  "author": "Marta Astatike",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "file": "^0.2.2",
+    "file-loader": "^6.2.0",
+    "loader": "^2.1.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^17.0.1",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "dom": "^0.0.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "react": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
+    "react-router": "^5.2.0",
+    "router-dom": "^2.1.4"
+  }
+}
