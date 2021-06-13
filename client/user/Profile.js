@@ -139,7 +139,7 @@ export default function Profile({ match }) {
           </ListItem>
           <Divider/>
           <ListItem>
-            <ListItemText primary={values.user.about} secondary={"Joined: " + (
+            <ListItemText primary={this.state.user.about} secondary={"Joined: " + (
               new Date(values.user.created)).toDateString()}/>
           </ListItem>
         </List>
